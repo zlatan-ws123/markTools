@@ -81,7 +81,7 @@ def applyWorkDir(sender, data):
                 add_separator()
                 add_spacing(count=5)
                 add_child("picSpace", width=int(get_value("width")/2-33), height=int(get_value("width")/2-33))
-                vedioPath = f"{directory}\{fileName}"
+                vedioPath = f"{directory}\\{fileName}"
                 set_value("vedioPath", vedioPath)
                 img, frameCount = otherFunction.cv2Img(vedioPath, 0, int(get_value("width")/2-35))
                 if type(img)==type(False):
